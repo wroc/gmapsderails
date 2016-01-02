@@ -1,0 +1,11 @@
+<% content_for :scripts do %>
+<%= javascript_include_tag *js_dependencies %>
+
+<script type="text/javascript">
+<%=raw options.to_gmapsderails %>
+</script>
+<% end %>
+
+<div class="<%= dom.container_class %>"> 
+  <div id="<%= dom.map_id %>" class="<%= dom.map_class %>"></div>
+</div>
