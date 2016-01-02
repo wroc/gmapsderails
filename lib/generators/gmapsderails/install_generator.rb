@@ -7,8 +7,8 @@ module Gmapsderails
 
       def copy_locale
         if Rails::VERSION::MINOR >= 1
-#          copy_file "#{source_assets_base_path}gmapsderails.base.js.coffee",       "#{destination_assets_base_path}gmapsderails.base.js.coffee"
-#          copy_file "#{source_assets_base_path}gmapsderails.googlemaps.js.coffee", "#{destination_assets_base_path}gmapsderails.googlemaps.js.coffee"
+          copy_file "#{source_assets_base_path}gmapsderails.base.js.coffee",       "#{destination_assets_base_path}gmapsderails.base.js.coffee"
+          copy_file "#{source_assets_base_path}gmapsderails.googlemaps.js.coffee", "#{destination_assets_base_path}gmapsderails.googlemaps.js.coffee"
           copy_file "../../../app/assets/stylesheets/gmapsderails.css", "app/assets/stylesheets/gmapsderails.css"
         else
         #I don't copy manifests, kind of useless
